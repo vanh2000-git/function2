@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Nguyên Tố</title>
+</head>
+<body>
+<script>
+  function isPrime(number) {
+    if (number < 2)
+      return false;
+    for (let i = 2; i <= Math.sqrt(number) ; i++) {
+      if (number % i === 0){
+        return false;
+      }
+    }
+    return true;
+  }
+  let numbers =  parseInt(prompt("nhap vao so bat ky"));
+  if (isPrime(numbers)){
+    alert(numbers + " la so nguyen to");
+  }else {
+    alert(numbers + " khong phai so nguyen to");
+  }
+</script>
+</body>
+</html>

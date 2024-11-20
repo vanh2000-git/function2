@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice-1</title>
+</head>
+<body>
+<!--BAI1-->
+<button onclick="alertMessage()">Nhấn để Hiển thị thông báo</button>
+<!--BAI2-->
+<input id="inputAdd1" placeholder="Nhập 1 số">
+<button type="button" onclick="add1()" id="resultAdd1">Kết quả</button>
+<script>
+    // BAI1
+    function alertMessage() {
+        alert("Xin chào");
+    }
+
+    // BAI2
+    function add1() {
+        let number = +document.getElementById("inputAdd1").value;
+        let add1Number = 0;
+        add1Number = number + 1;
+        document.getElementById("resultAdd1").innerHTML = add1Number;
+    }
+</script>
+</body>
+</html>

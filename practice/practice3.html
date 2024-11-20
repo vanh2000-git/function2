@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice-3</title>
+</head>
+<body>
+<button onclick="checkValues(5, 3)">Kiểm tra và Hiển thị</button>
+<p id="result"></p>
+
+<script>
+    function checkValues(a, b) {
+        if (a > b) {
+            alert("Giá trị của tham số thứ nhất lớn hơn tham số thứ hai!");
+        } else {
+            let sum = a + b;
+            document.getElementById("result").innerHTML = "Tổng của hai tham số là: " + sum;
+        }
+    }
+</script>
+</body>
+</html>
